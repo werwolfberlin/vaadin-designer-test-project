@@ -12,6 +12,7 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.vaadin.prevo.test.components.TestDesign1;
+import org.vaadin.prevo.test.components.TestDesign2;
 
 /**
  * A sample Vaadin view class.
@@ -44,9 +45,10 @@ public class MainView extends VerticalLayout {
     public MainView(@Autowired GreetService service) {
 
         add(new Label("Test View below"));
+        add(new TestDesign1());
 
-        final TestDesign1 testDesign1 = new TestDesign1();
-        add(testDesign1);
+        add(new Label("Vaadin View Below"));
+        add(new TestDesign2());
     }
 
 }

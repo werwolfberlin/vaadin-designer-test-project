@@ -28,7 +28,7 @@ public class TestDesign1 extends PolymerTemplate<TestDesign1.TestDesign1Model> {
      */
     public TestDesign1() {
         // You can initialise any data required for the connected UI components here.
-//        pButton.addClickListener(buttonClickEvent -> Notification.show(pTextField.getValue()));
+        pButton.addClickListener(buttonClickEvent -> Notification.show(pTextField.getValue()));
     }
 
     /**
