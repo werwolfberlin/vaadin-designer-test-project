@@ -29,8 +29,6 @@ public class TestDesign2 extends PolymerTemplate<TestDesign2.TestDesign2Model> {
      * Creates a new TestDesign2.
      */
     public TestDesign2() {
-        vaadinTextField = new TextField();
-        vaadinButton = new Button();
         // You can initialise any data required for the connected UI components here.
         vaadinButton.addClickListener(buttonClickEvent -> Notification.show(vaadinTextField.getValue()));
     }

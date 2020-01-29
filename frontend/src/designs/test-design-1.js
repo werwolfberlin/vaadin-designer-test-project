@@ -14,8 +14,10 @@ class TestDesign1 extends PolymerElement {
                 }
             </style>
 <vaadin-vertical-layout style="width: 100%; height: 100%;">
- <p-text-field id="pTextField"></p-text-field>
- <p-button id="pButton" tabindex=""></p-button>
+ <p-text-field id="pTextField" label="Test" clear-button-visible></p-text-field>
+ <p-button id="pButton" tabindex="">
+  Button 
+ </p-button>
 </vaadin-vertical-layout>
 `;
     }
