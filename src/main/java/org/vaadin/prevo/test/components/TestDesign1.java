@@ -22,6 +22,12 @@ public class TestDesign1 extends PolymerTemplate<TestDesign1.TestDesign1Model> {
 
     @Id("pButton")
     private PButton pButton;
+    @Id("pTable")
+    private PTable pTable;
+    @Id("pComboBox")
+    private PComboBox pComboBox;
+    @Id("pCheckbox")
+    private PCheckbox pCheckbox;
 
     /**
      * Creates a new TestDesign1.
@@ -29,6 +35,26 @@ public class TestDesign1 extends PolymerTemplate<TestDesign1.TestDesign1Model> {
     public TestDesign1() {
         // You can initialise any data required for the connected UI components here.
         pButton.addClickListener(buttonClickEvent -> Notification.show(pTextField.getValue()));
+    }
+
+    public PTextField getpTextField() {
+        return pTextField;
+    }
+
+    public PButton getpButton() {
+        return pButton;
+    }
+
+    public PTable getpTable() {
+        return pTable;
+    }
+
+    public PComboBox getpComboBox() {
+        return pComboBox;
+    }
+
+    public PCheckbox getpCheckbox() {
+        return pCheckbox;
     }
 
     /**
